@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mail</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./access/css/style.css">
+        <link rel="stylesheet" href="./access/font/themify-icons/themify-icons.css">
+    </head>
+    <body>
+        <div class="nav">
+            <a href="javascript:void(0)" class="nav__item">
+                <img src="./access/img/logo.png" alt="">
+            </a>
+            <a href="javascript:void(0)" class="nav__item--message" onclick="showModel('modelId')">
+                New message <i class="ti-pencil ml-15"></i>
+            </a>
+            <!-- Inbox  -->
+            <a id="inboxId" href="javascript:void(0)" class="nav__item" onclick="showInbox('inboxId');">
+                <i class="ti-id-badge"></i>Inbox (3) <i class="ti-angle-down ml-15"></i>
+            </a>
+            <div class="inbox-wrap">
+                <a href="javascript:void(0)" onclick="openMail('name_1')" class="inbox-container person">
+                    <div class="inbox-container__heading">
+                        <img src="https://www.w3schools.com/w3images/avatar3.png" alt="">
+                        <span>Borge Refsnes</span>
+                    </div>
+                    <h6 class="inbox-container__subject">Subject: Remember Me</h6>
+                    <p class="inbox-container__description">Hello, i just wanted to let you know that i'll be home at...</p>
+                </a>
+                <a href="javascript:void(0)" onclick="openMail('name_2')" class="inbox-container person">
+                    <div class="inbox-container__heading">
+                        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+                        <span>John</span>
+                    </div>
+                    <h6 class="inbox-container__subject"></h6>
+                    <p class="inbox-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </a>
+                <a href="javascript:void(0)" onclick="openMail('name_3')" class="inbox-container person">
+                    <div class="inbox-container__heading">
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+                        <span>Jane Doe</span>
+                    </div>
+                    <h6 class="inbox-container__subject"></h6>
+                    <p class="inbox-container__description">Wellcome!</p>
+                </a>
+            </div>
+            <!-- End inbox  -->
+            <a href="#" class="nav__item"><i class="ti-share"></i>Sent</a>
+            <a href="#" class="nav__item"><i class="ti-alarm-clock"></i>Drafts</a>
+            <a href="#" class="nav__item"><i class="ti-trash"></i>Trash</a>
+        </div>
+
+        <div class="main">
+            <div id="aboutContent" class="about">
+                <div id="name_1" class="about-item">
+                    <div class="item__description">
+                        <img src="https://www.w3schools.com/w3images/avatar3.png" alt="">
+                        <span>Subject: Remember Me</span>
+                        <p><i class="ti-alarm-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+                        <a href="" class="btn"><i class="ti-arrow-left"></i> Reply</a>.
+                        <a href="" class="btn"><i class="ti-arrow-right"></i> Forward</a>
+                    </div>
+                    <div class="item__content">
+                        <p>Hello, i just wanted to let you know that i'll be home at lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                       
+                        <p>
+                            Best Regards,
+                            <br>
+                            Borge Refsnes
+                        </p>
+                        
+                    </div>
+                </div>
+                <div id="name_2" class="about-item">
+                    <div class="item__description">
+                        <img src="https://www.w3schools.com/w3images/avatar5.png" alt="">
+                        <span>Subject: None</span>
+                        <p><i class="ti-alarm-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+                        <a href="" class="btn"><i class="ti-arrow-left"></i> Reply</a>.
+                        <a href="" class="btn"><i class="ti-arrow-right"></i> Forward</a>
+                    </div>
+                    <div class="item__content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>
+                            Forever yours,
+                            <br>
+                            Jane
+                        </p>
+                        
+                    </div>
+                </div>
+                <div id="name_3" class="about-item">
+                    <div class="item__description">
+                        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="">
+                        <span>Subject: None</span>
+                        <p><i class="ti-alarm-clock"></i> From Borge Refsnes, Sep 27, 2015.</p>
+                        <a href="" class="btn"><i class="ti-arrow-left"></i> Reply</a>.
+                        <a href="" class="btn"><i class="ti-arrow-right"></i> Forward</a>
+                    </div>
+                    <div class="item__content">
+                        <p>Welcome.</p>                    
+                        <p>That's it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modelId" class="model">
+           <div class="model-content">
+                <div class="model-content__heading">
+                    <h2>Send Mail</h2>
+                    <i class="ti-close" onclick="closeModel('modelId')"></i>
+                </div>
+                <div class="model-content__form">
+                    To
+                    <input type="text">
+                    From
+                    <input type="text">
+                    Subject
+                    <input type="text">
+                    <textarea type="text" placeholder="What's on your mind ?"></textarea>
+                </div>
+                <div class="model-content__button">
+                    <a href="javascript:void(0);" class="btn btn--close" onclick="closeModel('modelId')">Cancel <i class="ti-close"></i></a>
+                    <a href="" class="btn btn--send">Send <i class="ti-share"></i></a>
+                </div>
+           </div>
+        </div>
+
+        <script>
+            var isShowInbox = false;
+            function showInbox (id) {
+                console.log('----- Show inbox function -----')
+                const inboxId = document.getElementById(id);
+                var inboxSibling = inboxId.nextElementSibling;
+                console.log(inboxSibling)
+                console.log('isShowInbox: ' + isShowInbox);
+                if (isShowInbox) {
+                    inboxId.classList.remove('inbox--clicked')
+                    inboxSibling.classList.remove('inbox-wrap--show')
+                    isShowInbox = !isShowInbox;
+                } else {
+                    inboxId.classList.add('inbox--clicked')
+                    inboxSibling.classList.add('inbox-wrap--show')
+                    isShowInbox = !isShowInbox;
+                }
+            }
+
+            function closeModel (id) {
+                console.log('----- Close model function -----')
+                const modelId = document.getElementById(id);
+                modelId.style.display = 'none';
+            }
+
+            function showModel (id) {
+                console.log('----- Show model function -----')
+                const modelId = document.getElementById(id);
+                modelId.style.display = 'block';
+            }
+
+            function openMail (id) {
+                console.log('----- Open mail function -----')
+                const mailList = document.getElementById('aboutContent').children;
+                var personList = document.getElementsByClassName('person');
+                for (var i = 0; i < personList.length; i++) {
+                    personList[i].className = personList[i].className.replace('inbox-container--clicked', '');
+                }
+                for (var i = 0; i < mailList.length; i++) {
+                    // all mailid != id have display is none
+                    if (mailList[i].id === id) {
+                        mailList[i].style.display = 'block';
+                    } else {
+                        mailList[i].style.display = 'none';
+                    }
+                }
+                event.currentTarget.className += ' inbox-container--clicked';
+            }
+        </script>
+    </body>
+</html>
